@@ -112,19 +112,7 @@ Finalize this table once the hardware BOM is complete.
 
 ---
 
-## 6. Verification Plan
-
-| Module | Test |
-|---|---|
-| MotorDriver | Serial command sets PWM/direction; verify with scope or by observing wheel rotation |
-| Motion | Run each of the 4 actions; measure straight-line drift and turn angle on floor marks |
-| Sensors | Print raw and processed values over serial; rotate robot in front of beacon |
-| Comm | Phone joins AP, buttons respond with no visible lag under rapid presses |
-| Supervisor | Scenarios: mode switch, heartbeat timeout stops robot, manual overrides auto |
-
----
-
-## 7. Milestones
+## 6. Milestones
 
 | # | Milestone | Depends on | Target date | Owner |
 |---|---|---|---|---|
@@ -135,7 +123,7 @@ Finalize this table once the hardware BOM is complete.
 
 ---
 
-## 8. Repository Layout
+## 7. Repository Layout
 
 ```
 firmware/
@@ -155,7 +143,7 @@ docs/
 
 ---
 
-## 9. Open Questions
+## 8. Open Questions
 
 - Final sensor list and pin assignments.
 - WebSocket vs HTTP for the first milestone.
